@@ -72,3 +72,9 @@ function insertDom(root) {
     }
   }
 }
+
+exports.move = function(sub) {
+  addEventListener("keydown", function(e) {
+    sub({ keyCode: e.keyCode })
+  })
+}
