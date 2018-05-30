@@ -61,7 +61,6 @@ spec document =  VDomSpec {
 
 patchAndRun x myDom = do
   state <- x
-  log "patching"
   machine <- getLatestMachine
   newMachine <- step machine (myDom state)
   storeMachine newMachine

@@ -36,3 +36,12 @@ bg = prop "bg"
 
 gravity :: String -> Prop
 gravity = prop "gravity"
+
+stroke :: String -> Prop
+stroke = prop "stroke"
+
+cornerRadius :: String -> Prop
+cornerRadius = prop "cornerRadius"
+
+className :: String -> Prop
+className = prop "className"

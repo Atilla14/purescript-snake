@@ -40,17 +40,14 @@ function addChild (child, parent, index) {
 window.__screenSubs = {};
 
 function addAttribute (element, attribute) {
-  console.log("addAttribute");
   applyProp(element, attribute);
 }
 
 function removeAttribute (element, attribute) {
-  console.log("removeAttribute");
   console.log(element, attribute);
 }
 
 function updateAttribute (element, attribute) {
-  console.log("updateAttribute");
   applyProp(element, attribute);
 }
 
@@ -77,4 +74,10 @@ exports.move = function(sub) {
   addEventListener("keydown", function(e) {
     sub({ keyCode: e.keyCode })
   })
+}
+
+exports.randomInt = function (min) {
+  return function (max) {
+    return Math.floor(Math.random() * (max + 1)) + min;
+  }
 }

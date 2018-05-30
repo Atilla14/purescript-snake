@@ -4,6 +4,7 @@ module UI.Elements
     , element
     , linearLayout
     , relativeLayout
+    , textView
 	) where
 
 import Prelude
